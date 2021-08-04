@@ -1,0 +1,80 @@
+.body{
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('https://images.unsplash.com/photo-1610641564155-8ea9845579dd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
+}
+
+.container{
+    height: 100%;
+    margin: 30px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;  
+    -moz-user-select: none;
+    -ms-user-select: none;    
+    user-select: none;
+}
+
+.indicator{
+    margin: 0 10px;
+    height: 40px;
+    width: 300px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgb(175, 175, 175), rgb(206, 173, 124) 60%, rgb(218, 216, 215));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.cell{
+    margin: 0 10px;
+    height: 100px;
+    width: 300px;
+    cursor: grab;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell.hovered{
+    padding-top: 5px;
+    background-size: 25%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('https://image.flaticon.com/icons/png/512/747/747944.png');
+}
+
+.item{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(55, 104, 109, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    color: white;
+   
+}
+.item.hidden{
+    display: none;
+}
+
+.item.shadow{
+    box-shadow: 1 1 5px rgba(15, 15, 15, 0.5);
+}
